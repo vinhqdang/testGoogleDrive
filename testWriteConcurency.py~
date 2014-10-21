@@ -68,7 +68,7 @@ def thread_write (index):
 		wks[index].update_acell ("A1", str(index))
 		if (index == 0):
 			t_now = datetime.now ()
-			print "Thread " + str (index) + ": " + str (t_now) + " --> " + str (t_now - t_previous)
+			print "Thread " + str (index) + ": " + str (t_now) + " --> " str (t_now - t_previous)
 			t_previous = t_now
 		
 		#sleep (1)
